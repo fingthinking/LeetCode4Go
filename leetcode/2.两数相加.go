@@ -4,11 +4,7 @@ import (
 	"fmt"
 )
 
-/*
- * @lc app=leetcode.cn id=2 lang=golang
- *
- * [2] 两数相加
- */
+// ListNode 节点
 type ListNode struct {
 	Val  int
 	Next *ListNode
