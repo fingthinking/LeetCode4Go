@@ -24,9 +24,8 @@ func findMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	if m == 0 {
 		if n%2 == 0 {
 			return (float64(nums2[(n-1)/2]) + float64(nums2[n/2])) / 2
-		} else {
-			return float64(nums2[n/2])
 		}
+		return float64(nums2[n/2])
 	}
 	// 设i为数组1的切个点，j为数组2的切个点，保证切割后max(left) <= min(right)
 	// i + j = m - i + n - j 【m + n为偶数时】
